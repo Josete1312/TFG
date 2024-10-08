@@ -57,7 +57,7 @@ nav.active {
 }
 
 .nav-logo {
-    width: 80px;
+    width: 170px;
     height: auto;
 }
 
@@ -209,4 +209,9 @@ footer {
 
 .icon-small {
     width: 30px;
+}
+
+div.faq
+{
+    text-align: center;
 }
