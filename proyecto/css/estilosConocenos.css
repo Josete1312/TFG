@@ -29,7 +29,7 @@ header {
     font-size: 24px;
     cursor: pointer;
     color: white;
-    padding: 10px;
+    padding: 60px;
 }
 
 nav {
@@ -88,8 +88,8 @@ a:hover {
 .logo_grande {
     position: absolute;
     right: 0px;
-    top: 0px;
-    width: 120px;
+    top: 16px;
+    width: 240px;
     padding: 0px;
     transition: transform 0.3s;
     border-radius: 10px;
