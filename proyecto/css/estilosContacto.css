@@ -1,0 +1,219 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.company-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C7352;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #BFAE90;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    
+}
+
+nav.active {
+    left: 0;
+}
+
+.nav-logo-container {
+    margin: 20px 0;
+}
+
+.nav-logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+.instagram-logo-container {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.instagram-logo {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.instagram-logo:hover {
+    transform: scale(1.1);
+}
+
+.logo_grande {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    padding: 0px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+a:hover {
+    color: #2C7352;
+    text-decoration: underline;
+}
+
+.logo_grande:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    color: #2C7352;
+}
+main {
+    padding: 20px;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icon-small {
+    width: 30px;
+}
+
+h2 {
+    color: #2C7352;
+    border-bottom: 2px solid #BFAE90;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.contacto {
+    margin: 20px 0;
+}
+
+.icono {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form textarea {
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #2C7352;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #BFAE90;
+}
+
+.instagram,
+.email {
+    color: #2C7352;
+    text-decoration: none;
+}
+
+.instagram:hover,
+.email:hover {
+    color: #2C7352;
+    background-color: transparent; 
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+    <link rel="stylesheet" href="./css/estilosActividades.css">
+</head>
+<body>
+
+    <header>
+        <div class="menu-icon" onclick="toggleMenu()">
+            &#9776;
+        </div>
+        <div class="logo">
+            <img src="./img/logo_grande.jpg" alt="Logo Dietistas" class="logo_grande">
+        </div>
+        <div class="company-name">DIETECTIVES</div>
+        <nav id="menu">
+            <div class="nav-logo-container">
+                <img src="./img/logo.jpg" alt="Logo" class="nav-logo">
+            </div>
+            <ul>
+                <li>
+                    <a href="inicio.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="conocenos.html">Conócenos</a>
+                    <p>Descubre quiénes somos.</p>
+                </li>
+                <li>
+                    <a href="proyectosSANUM.html">Proyectos SANUM</a>
+                    <p>Explora nuestros proyectos.</p>
+                </li>
+                <li>
+                    <a href="contacto.html">Contacto</a>
+                    <p>Contáctanos en cualquier momento.</p>
+                </li>
+            </ul>
+            <div class="instagram-logo-container">
+                <a href="https://www.instagram.com\proyectosanum" target="_blank">
+                    <img src="img/instagram-removebg-preview.png" alt="Instagram Logo" class="instagram-logo">
+                </a>
+            </div>
+        </nav>        
+    </header>
+
+    <section>
+        <h2>Actividades</h2>
+        <p>Hace unos días estuvimos en el Centro Digital de la Fundación Orange dando forma a nuestra empresa, donde pudimos desarrollar ideas fundamentales para el proyecto y las actividades que tenemos pensadas con los niños, además de hacernos con nuestra camiseta corporativa y nuestro súper logo.</p>
+        <p>Gracias a la tecnología y la IA hemos diseñado un plato Harvard para las charlas con niños, padres y madres del CEIP Bolivia y de esta forma poder acercarles un poco más a la idea de alimentación equilibrada y saludable.</p>
+        <p>También, con la impresora 3D, tenemos en proceso nuestra pirámide nutricional.</p>
+        <p><strong>¡Hemos hecho hasta una canción!</strong></p>
+    </section>
+
+    <div id="carousel" class="carousel">
+        <div class="carousel-images">
+            <img src="img/actividades1.jpeg" alt="Descripción de imagen 1">
+            <img src="img/actividades2.jpeg" alt="Descripción de imagen 2">
+            <img src="img/actividades3.jpeg" alt="Descripción de imagen 3">
+            <img src="img/actividades4.jpeg" alt="Descripción de imagen 4">
+            <img src="img/actividades5.jpeg" alt="Descripción de imagen 5">
+        </div>
+        <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="next" onclick="changeSlide(1)">&#10095;</button>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 DIETECTIVES. Todos los derechos reservados.</p>
+        <p>Síguenos en nuestras redes sociales para más consejos y actualizaciones.</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com\proyectosanum"><img src="img/instagram-removebg-preview.png" id="icon-small" alt="Instagram" target="_blank"></a>
+        </div>
+    </footer>
+    <script src="js/inicio.js"></script>
+    <script src="js/carrusel.js"></script>
+    <script src="js/secction.js"></script>
+</body>
+</html>

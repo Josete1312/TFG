@@ -1,0 +1,281 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    padding: 10px 20px;
+    position: relative;
+}
+
+.company-name {
+    font-size: 32px;
+    font-weight: bold;
+    color: #2C7352;
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px 0;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Arial', sans-serif;
+}
+
+.main-image {
+    position: relative; /* Necesario para el overlay */
+    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
+    overflow: hidden; /* Oculta cualquier desbordamiento */
+}
+
+.image-container {
+    position: relative; /* Necesario para la superposición */
+    display: flex; /* Usar flexbox para centrar */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+}
+
+.main-img {
+    width: 100%; /* Ocupa todo el ancho del div */
+    height: auto; /* Mantiene la relación de aspecto de la imagen */
+    max-width: 600px; /* Establecer un ancho máximo para que no se vea demasiado grande */
+    border-radius: 10px; /* Esquinas redondeadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.overlay {
+    position: absolute; /* Posiciona el overlay */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
+    color: white; /* Color del texto */
+    display: flex; /* Utiliza flexbox para centrar el contenido */
+    flex-direction: column; /* Centra el texto verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+    align-items: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+    padding: 20px; /* Espaciado alrededor del texto */
+}
+
+.overlay h2 {
+    font-size: 1.8em; /* Tamaño de fuente del título */
+    margin: 0 0 10px; /* Margen inferior */
+}
+
+.overlay p {
+    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+}
+
+
+
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    background-color: #BFAE90;
+    width: 250px;
+    height: 100vh;
+    transition: left 0.3s ease-in-out;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    
+}
+
+nav.active {
+    left: 0;
+}
+
+.nav-logo-container {
+    margin: 20px 0;
+}
+
+.nav-logo {
+    width: 80px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul li a,
+section h2 a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+    padding: 10px 0;
+}
+
+nav ul li a:hover,
+section h2 a:hover {
+    color: #2C7352;
+    text-decoration: underline;
+}
+
+.logo-small{
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
+
+.instagram-logo-container {
+    margin-top: auto;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.instagram-logo {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease; 
+}
+
+.instagram-logo:hover {
+    transform: scale(1.1);
+}
+
+.logo_grande {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 120px;
+    padding: 0px;
+    transition: transform 0.3s;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+h1{
+    border-bottom: 2px solid #BFAE90;
+}
+
+a{
+    color:#2C7352;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #BFAE90;
+    text-decoration: none;
+}
+
+.logo_grande:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    color: #2C7352;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+h2 {
+    color: #2C7352;
+    border-bottom: 2px solid #BFAE90;
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .logo_grande {
+        width: 120px;
+    }
+
+    section {
+        margin: 15px 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icon-small {
+    width: 30px;
+}
