@@ -14,63 +14,93 @@ header {
 }
 
 .company-name {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
-    color: #2C7352;
+    background: linear-gradient(135deg, #ff5733, #ffbd33);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, background-position 0.5s ease; 
+    background-size: 200% 200%;
+}
+
+.company-name::before {
+    content: attr(data-text); 
+    position: absolute;
+    left: 2px; 
+    top: 2px; 
+    color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+.company-name:hover {
+    transform: scale(1.1);
+    animation: animateGradient 5s ease infinite;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .main-image {
-    position: relative; /* Necesario para el overlay */
-    margin: 20px 0; /* Espacio arriba y abajo de la imagen */
-    overflow: hidden; /* Oculta cualquier desbordamiento */
+    position: relative;
+    margin: 20px 0;
+    overflow: hidden;
 }
 
 .image-container {
-    position: relative; /* Necesario para la superposición */
-    display: flex; /* Usar flexbox para centrar */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .main-img {
-    width: 100%; /* Ocupa todo el ancho del div */
-    height: auto; /* Mantiene la relación de aspecto de la imagen */
-    max-width: 600px; /* Establecer un ancho máximo para que no se vea demasiado grande */
-    border-radius: 10px; /* Esquinas redondeadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .overlay {
-    position: absolute; /* Posiciona el overlay */
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro semitransparente */
-    color: white; /* Color del texto */
-    display: flex; /* Utiliza flexbox para centrar el contenido */
-    flex-direction: column; /* Centra el texto verticalmente */
-    justify-content: center; /* Centra el contenido verticalmente */
-    align-items: center; /* Centra el contenido horizontalmente */
-    text-align: center; /* Centra el texto */
-    padding: 20px; /* Espaciado alrededor del texto */
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: flex-end;
 }
 
 .overlay h2 {
-    font-size: 1.8em; /* Tamaño de fuente del título */
-    margin: 0 0 10px; /* Margen inferior */
+    font-size: 1.8em;
+    margin: 0;
 }
 
 .overlay p {
-    font-size: 1.2em; /* Tamaño de fuente del párrafo */
+    font-size: 1.2em;
+    margin-top: 10px;
 }
-
 
 
 .menu-icon {
@@ -109,6 +139,11 @@ nav.active {
     height: auto;
 }
 
+.nav-logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -128,22 +163,12 @@ nav ul li a {
     padding: 10px 0;
 }
 
-nav ul li a,
-section h2 a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px 0;
-}
-
-nav ul li a:hover,
-section h2 a:hover {
+nav ul li a:hover {
     color: #2C7352;
     text-decoration: underline;
 }
 
-.logo-small{
+.logo-small {
     width: 30px;
     height: auto;
     vertical-align: middle;
@@ -175,17 +200,18 @@ section h2 a:hover {
     top: 16px;
     width: 240px;
     padding: 0px;
+    margin-right: 12px;
     transition: transform 0.3s;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-h1{
+h1 {
     border-bottom: 2px solid #BFAE90;
 }
 
-a{
-    color:#2C7352;
+a {
+    color: #2C7352;
     text-decoration: none;
 }
 
@@ -224,6 +250,10 @@ h2 {
 }
 
 @media (max-width: 768px) {
+    .company-name {
+        font-size: 24px;
+    }
+    
     nav ul li {
         display: block;
         text-align: center;
@@ -240,6 +270,10 @@ h2 {
 }
 
 @media (max-width: 480px) {
+    .company-name {
+        font-size: 18px;
+    }
+
     nav ul li {
         margin-bottom: 8px;
     }

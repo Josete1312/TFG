@@ -14,15 +14,45 @@ header {
 }
 
 .company-name {
-    font-size: 32px;
+    font-size: 50px;
     font-weight: bold;
-    color: #2C7352;
+    background: linear-gradient(135deg, #ff5733, #ffbd33);
+    -webkit-background-clip: text; 
+    -webkit-text-fill-color: transparent; 
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
+    transition: transform 0.3s ease, background-position 0.5s ease; 
+    background-size: 200% 200%;
+}
+
+.company-name::before {
+    content: attr(data-text); 
+    position: absolute;
+    left: 2px; 
+    top: 2px; 
+    color: rgba(0, 0, 0, 0.3); 
+    z-index: -1; 
+}
+
+.company-name:hover {
+    transform: scale(1.1);
+    animation: animateGradient 5s ease infinite;
+}
+
+@keyframes animateGradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
 
 .menu-icon {
@@ -61,6 +91,11 @@ nav.active {
     height: auto;
 }
 
+.nav-logo:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
 nav ul {
     list-style-type: none;
     padding: 0;
@@ -91,6 +126,7 @@ a:hover {
     top: 16px;
     width: 240px;
     padding: 0px;
+    margin-right: 12px;
     transition: transform 0.3s;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
