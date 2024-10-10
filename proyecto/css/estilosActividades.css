@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -22,6 +22,7 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
+    margin-right: 700px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
@@ -239,9 +240,9 @@ h2 {
 
 .carousel {
     position: relative;
-    width: 60vw;
-    max-width: 400px;
-    height: 300px;
+    width: 100vw;
+    max-width: 800px;
+    height: 500px;
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -254,7 +255,7 @@ h2 {
 }
 
 .carousel-images img {
-    width: 100%;
+    min-width: 100%;
     height: 100%;
     object-fit: cover;
 }
@@ -282,4 +283,23 @@ h2 {
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 1);
     transition: background-color 0.3s;
+}
+
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #88b28a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+#btn-top:hover {
+    background-color: #c6b5a1;
 }

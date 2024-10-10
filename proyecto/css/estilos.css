@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -22,6 +22,7 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
+    margin-right: 700px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
@@ -332,4 +333,9 @@ h2 {
 
 .icon-small {
     width: 30px;
+}
+
+#mensaje-bienvenida{
+    text-align: center;
+    font-size: 40px;
 }

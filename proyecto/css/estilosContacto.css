@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 50px;
+    font-size: 70px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -22,6 +22,7 @@ header {
     text-align: center;
     margin: 0 auto;
     padding: 10px 0;
+    margin-right: 700px;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-family: 'Arial', sans-serif;
@@ -271,5 +272,51 @@ form button:hover {
 
 #btn-top:hover {
     background-color: #c6b5a1;
+}
+
+.map-section {
+    text-align: center;
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.map-section h2 {
+    color: #2C7352;
+    margin-bottom: 20px;
+    font-size: 24px;
+    border-bottom: 2px solid #BFAE90;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.map-container iframe {
+    border: none;
+    border-radius: 8px;
+    width: 80%;
+    max-width: 1000px;
+    height: 450px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .map-container iframe {
+        width: 90%;
+        height: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .map-container iframe {
+        width: 100%;
+        height: 250px;
+    }
 }
 
