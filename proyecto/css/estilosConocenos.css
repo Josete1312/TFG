@@ -339,7 +339,7 @@ div.faq
 
 .team-member {
     text-align: center;
-    border: 2px solid #c6b5a1;
+    border: 2px solid #BFAE90;
     padding: 15px;
     border-radius: 10px;
     background-color: #f9f9f9;
@@ -360,12 +360,12 @@ div.faq
 }
 
 .team-member h3 {
-    color: #88b28a;
+    color: #2C7352;
     margin-bottom: 5px;
 }
 
 .team-member p {
-    color: #555;
+    color: black;
     font-size: 14px;
     margin: 0;
 }
