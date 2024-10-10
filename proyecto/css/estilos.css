@@ -225,6 +225,26 @@ a:hover {
     transition: transform 0.3s ease;
 }
 
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #88b28a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+#btn-top:hover {
+    background-color: #c6b5a1;
+}
+
+
 footer {
     text-align: center;
     padding: 20px 0;

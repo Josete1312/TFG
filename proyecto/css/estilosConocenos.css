@@ -251,3 +251,31 @@ div.faq
 {
     text-align: center;
 }
+
+#btn-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 100;
+    background-color: #88b28a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 18px;
+    display: none;
+}
+
+#btn-top:hover {
+    background-color: #c6b5a1;
+}
+
+#mision-valores,
+#historia {
+    margin: 20px 0;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}

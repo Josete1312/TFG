@@ -144,8 +144,8 @@ footer {
 .logo_grande {
     position: absolute;
     right: 0px;
-    top: 240px;
-    width: 120px;
+    top: 16px;
+    width: 240px;
     padding: 0px;
     margin-right: 12px;
     transition: transform 0.3s;
