@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -28,6 +28,8 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
+    margin-left: 25%;
+    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {
@@ -76,6 +78,7 @@ nav {
     flex-direction: column;
     align-items: center;
     background: linear-gradient(135deg, #88b28a, #d8c4a9);
+    font-size: 100%;
     
 }
 
@@ -265,4 +268,94 @@ footer {
 
 #btn-top:hover {
     background-color: #c6b5a1;
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        left: 20%;
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        margin: 0; /* Ajustar márgenes */
+        margin-right: 34%;
+    }
+
+    .menu-icon {
+        padding: 20px; /* Reducir padding para icono de menú */
+    }
+
+    .nav-logo {
+        width: 100px; /* Ajustar tamaño del logo */
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+    }
+
+    .member-photo {
+        width: 100%; /* Ajustar el ancho de la foto del miembro */
+        height: auto; /* Mantener la proporción */
+    }
+
+    .social-icons img {
+        width: 30px; /* Ajustar tamaño de iconos sociales */
+    }
+    .logo_grande {
+        margin-top: 3.5%;
+        width: 20%; /* Reduce image size for mobile devices */
+        top: 10px; /* Adjust position */
+    }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 40px;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.1);
+}
+
+.icon-small {
+    width: 30px;
+}
+
+#mensaje-bienvenida{
+    text-align: center;
+    font-size: 40px;
 }

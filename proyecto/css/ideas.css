@@ -58,12 +58,6 @@ header {
     }
 }
 
-.main-image {
-    position: relative;
-    margin: 20px 0;
-    overflow: hidden;
-}
-
 .image-container {
     position: relative;
     display: flex;
@@ -78,6 +72,33 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    justify-content: flex-end;
+}
+
+.overlay h2 {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.overlay p {
+    font-size: 1.2em;
+    margin-top: 10px;
+}
+
 
 .menu-icon {
     font-size: 24px;
@@ -100,7 +121,6 @@ nav {
     align-items: center;
     background: linear-gradient(135deg, #88b28a, #d8c4a9);
     font-size: 100%;
-    
     
 }
 
@@ -233,17 +253,6 @@ footer {
     color: #2C7352;
 }
 
-section {
-    margin: 20px 0;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    background-color: #f9f9f9;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
 
 h2 {
     color: #2C7352;
@@ -253,40 +262,40 @@ h2 {
 @media (max-width: 768px) {
     .company-name {
         left: 20%;
-        font-size: 30px;
-        margin: 0;
+        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
+        margin: 0; /* Ajustar márgenes */
         margin-right: 34%;
     }
 
     .menu-icon {
-        padding: 20px;
+        padding: 20px; /* Reducir padding para icono de menú */
     }
 
     .nav-logo {
-        width: 100px;
+        width: 100px; /* Ajustar tamaño del logo */
     }
 
     .container {
-        flex-direction: column;
-        align-items: center;
+        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
+        align-items: center; /* Centrar elementos */
     }
 
     .team-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Cambiar a una sola columna */
     }
 
     .member-photo {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ajustar el ancho de la foto del miembro */
+        height: auto; /* Mantener la proporción */
     }
 
     .social-icons img {
-        width: 30px;
+        width: 30px; /* Ajustar tamaño de iconos sociales */
     }
     .logo_grande {
         margin-top: 3.5%;
-        width: 20%;
-        top: 10px;
+        width: 20%; /* Reduce image size for mobile devices */
+        top: 10px; /* Adjust position */
     }
 }
 
@@ -339,3 +348,106 @@ h2 {
     text-align: center;
     font-size: 40px;
 }
+
+#comida {
+    width: 300px; /* Ajusta el ancho según lo necesites */
+    height: 300px; /* Ajusta la altura según lo necesites */
+    object-fit: cover; /* Asegura que las imágenes llenen el espacio sin distorsionarse */
+    border-radius: 10px; /* Opcional: agrega bordes redondeados */
+    overflow: hidden; /* Asegura que nada se desborde del contenedor */
+}
+
+#comida:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+}
+
+/* Styling for each section (person and their recipe) */
+.section {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 800px; /* Ajusta el ancho según sea necesario */
+    margin: 0 auto;  /* Esto centra el contenedor general horizontalmente */
+    margin-top: 2%;
+}
+
+.persona {
+    align-items: center;
+    text-align: center;
+    margin-bottom: 30px; /* Cambiar de 100px a 30px o menos */
+    padding: 15px; /* Espacio interno */
+    border: 2px solid #2C7352; /* Color y grosor del borde */
+    border-radius: 10px; /* Esquinas redondeadas, si deseas */
+    background-color: #fff; /* Color de fondo, si deseas */
+}
+
+
+
+.persona img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 15px;
+    
+}
+
+.persona img:hover{
+    transform: scale(1.1);
+}
+
+.persona-description {
+    text-align: center; /* Para centrar el texto de la descripción */
+}
+
+
+.consejos p {
+    font-size: 1em;
+    margin-top: 10px;
+    text-align: center; /* Centra el texto del consejo */
+}
+
+/* Styling for ingredients and preparation sections */
+ul, ol {
+    margin: 0;          /* Elimina el margen */
+    padding: 0;         /* Elimina el relleno */
+    list-style-position: inside; /* Mueve los puntos/números dentro de la lista */
+}
+
+/* For better alignment of list items */
+ul li, ol li {
+    text-indent: -1.2em; /* Mueve el texto un poco hacia la izquierda */
+    padding-left: 1.5em; /* Espacio entre el número/punto y el texto */
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+
+/* Styling for consejos paragraph */
+.consejos p {
+    font-size: 1em;
+    color: #2C7352; /* Color verde especificado */
+    margin-top: 10px;
+    text-align: center; /* Centra el texto del consejo */
+}
+
+
+.receta h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.ingredientes ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.preparacion ol {
+    list-style-type: decimal;
+    margin-left: 20px;
+}
+
+

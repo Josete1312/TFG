@@ -14,7 +14,7 @@ header {
 }
 
 .company-name {
-    font-size: 70px;
+    font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
     -webkit-background-clip: text; 
@@ -28,6 +28,7 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
+    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {
@@ -340,10 +341,18 @@ div.faq
 .team-member {
     text-align: center;
     border: 2px solid #BFAE90;
-    padding: 15px;
+    padding: 0px;
     border-radius: 10px;
     background-color: #f9f9f9;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    padding: 10%; 
+    max-width: 80%;  
+    overflow: hidden;
 }
 
 .team-member:hover {
@@ -352,11 +361,12 @@ div.faq
 }
 
 .member-photo {
-    width: 150px;
-    height: 150px;
+    width: 120%;
+    height: 400%;
     object-fit: cover;
     border-radius: 50%;
     margin-bottom: 10px;
+    display: block;
 }
 
 .team-member h3 {
@@ -368,4 +378,59 @@ div.faq
     color: black;
     font-size: 14px;
     margin: 0;
+}
+
+@media (max-width: 768px) {
+    .company-name {
+        left: 20%;
+        font-size: 30px;
+        margin: 0;
+        margin-right: 34%;
+    }
+
+    .menu-icon {
+        padding: 20px;
+    }
+
+    .nav-logo {
+        width: 100px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-icons img {
+        width: 30px;
+    }
+    .logo_grande {
+        margin-top: 3.5%;
+        width: 20%;
+        top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .company-name {
+        font-size: 18px;
+    }
+
+    nav ul li {
+        margin-bottom: 8px;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    section {
+        margin: 10px 5px;
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 1.3em;
+    }
 }
