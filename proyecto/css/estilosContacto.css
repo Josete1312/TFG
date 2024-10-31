@@ -28,7 +28,7 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
-    margin-left: 25%;
+    margin-right: 500px;
     font-family: 'Super Kinds', cursive;
 }
 
@@ -311,40 +311,40 @@ form button:hover {
 @media (max-width: 768px) {
     .company-name {
         left: 20%;
-        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
-        margin: 0; /* Ajustar márgenes */
+        font-size: 30px; 
+        margin: 0;
         margin-right: 34%;
     }
 
     .menu-icon {
-        padding: 20px; /* Reducir padding para icono de menú */
+        padding: 20px;
     }
 
     .nav-logo {
-        width: 100px; /* Ajustar tamaño del logo */
+        width: 100px; 
     }
 
     .container {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar elementos */
+        flex-direction: column;
+        align-items: center; 
     }
 
     .team-grid {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        grid-template-columns: 1fr;
     }
 
     .member-photo {
-        width: 100%; /* Ajustar el ancho de la foto del miembro */
-        height: auto; /* Mantener la proporción */
+        width: 100%;
+        height: auto;
     }
 
     .social-icons img {
-        width: 30px; /* Ajustar tamaño de iconos sociales */
+        width: 30px;
     }
     .logo_grande {
         margin-top: 3.5%;
-        width: 20%; /* Reduce image size for mobile devices */
-        top: 10px; /* Adjust position */
+        width: 20%;
+        top: 10px;
     }
 }
 
@@ -397,4 +397,3 @@ form button:hover {
     text-align: center;
     font-size: 40px;
 }
-

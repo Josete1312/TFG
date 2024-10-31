@@ -28,6 +28,7 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
+    margin-right: 500px;
     font-family: 'Super Kinds', cursive;
 }
 
@@ -93,7 +94,7 @@ nav.active {
     height: auto;
 }
 
-.nav-logo:hover{
+.nav-logo:hover {
     transform: scale(1.1);
     transition: transform 0.3s ease;
 }
@@ -249,8 +250,7 @@ footer {
     width: 30px;
 }
 
-div.faq
-{
+div.faq {
     text-align: center;
 }
 
@@ -351,7 +351,7 @@ div.faq
     align-items: center; 
     text-align: center;
     padding: 10%; 
-    max-width: 80%;  
+    max-width: 80%;
     overflow: hidden;
 }
 

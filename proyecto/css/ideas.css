@@ -28,7 +28,7 @@ header {
     font-family: 'Arial', sans-serif;
     transition: transform 0.3s ease, background-position 0.5s ease; 
     background-size: 200% 200%;
-    margin-left: 25%;
+    margin-right: 500px;
     font-family: 'Super Kinds', cursive;
 }
 
@@ -262,40 +262,40 @@ h2 {
 @media (max-width: 768px) {
     .company-name {
         left: 20%;
-        font-size: 30px; /* Reducir tamaño de fuente en pantallas pequeñas */
-        margin: 0; /* Ajustar márgenes */
+        font-size: 30px; 
+        margin: 0;
         margin-right: 34%;
     }
 
     .menu-icon {
-        padding: 20px; /* Reducir padding para icono de menú */
+        padding: 20px; 
     }
 
     .nav-logo {
-        width: 100px; /* Ajustar tamaño del logo */
+        width: 100px; 
     }
 
     .container {
-        flex-direction: column; /* Cambiar a columna en pantallas pequeñas */
-        align-items: center; /* Centrar elementos */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .team-grid {
-        grid-template-columns: 1fr; /* Cambiar a una sola columna */
+        grid-template-columns: 1fr; 
     }
 
     .member-photo {
-        width: 100%; /* Ajustar el ancho de la foto del miembro */
-        height: auto; /* Mantener la proporción */
+        width: 100%; 
+        height: auto;
     }
 
     .social-icons img {
-        width: 30px; /* Ajustar tamaño de iconos sociales */
+        width: 30px;
     }
     .logo_grande {
         margin-top: 3.5%;
-        width: 20%; /* Reduce image size for mobile devices */
-        top: 10px; /* Adjust position */
+        width: 20%;
+        top: 10px;
     }
 }
 
@@ -350,37 +350,36 @@ h2 {
 }
 
 #comida {
-    width: 300px; /* Ajusta el ancho según lo necesites */
-    height: 300px; /* Ajusta la altura según lo necesites */
-    object-fit: cover; /* Asegura que las imágenes llenen el espacio sin distorsionarse */
-    border-radius: 10px; /* Opcional: agrega bordes redondeados */
-    overflow: hidden; /* Asegura que nada se desborde del contenedor */
+    width: 300px;
+    height: 300px; 
+    object-fit: cover;
+    border-radius: 10px; 
+    overflow: hidden; 
 }
 
 #comida:hover {
-    transform: scale(1.05); /* Aumenta el tamaño al pasar el ratón */
+    transform: scale(1.05); 
 }
 
-/* Styling for each section (person and their recipe) */
 .section {
     background-color: #fff;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px; /* Ajusta el ancho según sea necesario */
-    margin: 0 auto;  /* Esto centra el contenedor general horizontalmente */
+    max-width: 800px; 
+    margin: 0 auto; 
     margin-top: 2%;
 }
 
 .persona {
     align-items: center;
     text-align: center;
-    margin-bottom: 30px; /* Cambiar de 100px a 30px o menos */
-    padding: 15px; /* Espacio interno */
-    border: 2px solid #2C7352; /* Color y grosor del borde */
-    border-radius: 10px; /* Esquinas redondeadas, si deseas */
-    background-color: #fff; /* Color de fondo, si deseas */
+    margin-bottom: 30px; 
+    padding: 15px;
+    border: 2px solid #2C7352; 
+    border-radius: 10px;
+    background-color: #fff;
 }
 
 
@@ -398,39 +397,35 @@ h2 {
 }
 
 .persona-description {
-    text-align: center; /* Para centrar el texto de la descripción */
+    text-align: center; 
 }
 
 
 .consejos p {
     font-size: 1em;
     margin-top: 10px;
-    text-align: center; /* Centra el texto del consejo */
+    text-align: center; 
 }
 
-/* Styling for ingredients and preparation sections */
 ul, ol {
-    margin: 0;          /* Elimina el margen */
-    padding: 0;         /* Elimina el relleno */
-    list-style-position: inside; /* Mueve los puntos/números dentro de la lista */
+    margin: 0;
+    padding: 0; 
+    list-style-position: inside;
 }
 
-/* For better alignment of list items */
 ul li, ol li {
-    text-indent: -1.2em; /* Mueve el texto un poco hacia la izquierda */
-    padding-left: 1.5em; /* Espacio entre el número/punto y el texto */
+    text-indent: -1.2em;
+    padding-left: 1.5em; 
     font-size: 16px;
     line-height: 1.6;
     color: #333;
 }
 
-
-/* Styling for consejos paragraph */
 .consejos p {
     font-size: 1em;
-    color: #2C7352; /* Color verde especificado */
+    color: #2C7352;
     margin-top: 10px;
-    text-align: center; /* Centra el texto del consejo */
+    text-align: center;
 }
 
 
@@ -449,5 +444,3 @@ ul li, ol li {
     list-style-type: decimal;
     margin-left: 20px;
 }
-
-
