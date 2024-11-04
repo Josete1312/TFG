@@ -13,23 +13,28 @@ header {
     position: relative;
 }
 
+@font-face {
+    font-family: 'Absender';
+    src: url('../absender1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 .company-name {
     font-size: 100px;
     font-weight: bold;
     background: linear-gradient(135deg, #ff5733, #ffbd33);
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     text-align: center;
+    display: block;
     margin: 0 auto;
     padding: 10px 0;
-    margin-right: 700px;
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-family: 'Arial', sans-serif;
-    transition: transform 0.3s ease, background-position 0.5s ease; 
+    font-family: 'Absender', sans-serif;
+    transition: transform 0.3s ease, background-position 0.5s ease;
     background-size: 200% 200%;
-    margin-right: 500px;
-    font-family: 'Super Kinds', cursive;
 }
 
 .company-name::before {
@@ -145,7 +150,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #2C7352;
+    color: #2C7352; 
     text-decoration: underline;
 }
 
