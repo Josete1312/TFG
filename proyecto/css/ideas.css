@@ -449,3 +449,18 @@ ul li, ol li {
     list-style-type: decimal;
     margin-left: 20px;
 }
+
+#pdf{
+    margin: 20px auto;
+    max-width: 300%; /* Ajusta según tu preferencia */
+    height: 90vh; /* Ocupa el 90% de la altura de la ventana */
+    border: 2px solid #ccc; /* Opcional: para resaltar el contenedor */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Opcional: sombra para darle un mejor aspecto */
+    background-color: #f4f4f4; /* Opcional: color de fondo para el contenedor */
+}
+
+#pdf iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
