@@ -364,3 +364,17 @@ h2 {
 #btn-top:hover {
     background-color: #c6b5a1;
 }
+
+.imagenes-visita {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.imagenes-visita img {
+    width: 35%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
